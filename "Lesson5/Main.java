@@ -13,14 +13,16 @@ public class Main {
 
         double mDiff = Math.abs(m - 10);
         double nDiff = Math.abs(n - 10);
-
-        if (mDiff < nDiff) {
+         if (mDiff < nDiff) {
             System.out.println("Число " + m + " ближе к 10.");
-        } else {
+        } else if (nDiff < mDiff) {
             System.out.println("Число " + n + " ближе к 10.");
+        } else {
+            System.out.println("Числа " + m + " и " + n + " расположены на одинаковом расстоянии от 10.");
         }
     }
 }
+      
 
 //import java.util.Random;
 //
